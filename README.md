@@ -11,5 +11,5 @@ pip install -r requirements.txt
 ```
 4. Finally run
 ```
-python .\src\llama-index\app.py
+python .\src\llama-index\query.py
 ```
