@@ -33,10 +33,3 @@ query_engine = GraphRAGQueryEngine(
     index=index,
     similarity_top_k=10,
 )
-
-
-response = query_engine.query(
-    "What are the main news discussed in the document?"
-)
-
-print(response)
