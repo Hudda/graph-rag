@@ -71,21 +71,3 @@ index = PropertyGraphIndex(
     property_graph_store=graph_store,
     show_progress=True,
 )
-
-index.property_graph_store.build_communities()
-
-
-
-query_engine = GraphRAGQueryEngine(
-    graph_store=index.property_graph_store,
-    llm=llm,
-    index=index,
-    similarity_top_k=10,
-)
-
-
-response = query_engine.query(
-    "What are the main news discussed in the document?"
-)
-
-print(response)
